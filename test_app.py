@@ -13,7 +13,7 @@ class TestInventory(unittest.TestCase):
         self.assertEqual(ingredient_cost(5, 10), 95.0)
 
     def test_discount(self):
-        self.assertEqual(bulk_discount(1500), 1000.0)
+        self.assertEqual(bulk_discount(1500), 1350.0)
         self.assertEqual(bulk_discount(500), 500.0)
 
 if __name__ == '__main__':

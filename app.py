@@ -12,3 +12,9 @@ def ingredient_cost(flour_kg, oil_liters):
 if __name__ == "__main__":
     print(f"Revenue for 100 portions (15 PLN per portion): {calculate_revenue(100, 15)}")
     print(f"Cost of 5 kg flour and 10 liters of oil: {ingredient_cost(5, 10)}")
+
+def bulk_discount(total_price):
+    """Applies a 10% discount for orders above 1000 PLN."""
+    if total_price > 1000:
+        return total_price * 0.90
+    return total_price
